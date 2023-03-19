@@ -1,0 +1,31 @@
+{
+  "name": "apiserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "argon2": "^0.28.5",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "events": "^3.3.0",
+    "express": "^4.18.2",
+    "googleapis": "^99.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.10.3",
+    "mqtt": "^4.3.7",
+    "node-fetch": "^3.2.3",
+    "socket.io": "^4.6.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
