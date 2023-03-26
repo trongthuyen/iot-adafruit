@@ -2,6 +2,7 @@ import sys
 from Adafruit_IO import MQTTClient
 from utils.configs import *
 import utils.globals as g
+import random
 
 class AIOController:
   feeds = []
@@ -51,11 +52,12 @@ class AIOController:
         separate = element.find(g.SEPARATE)
         if separate != -1:
           if element[0] == "T":
-            self.client.publish(FEED_TEMP, element[separate + 1 :])
-            # print("T", element[1])
+            temp = random.random() * 100
+            self.client.publish(FEED_TEMP, temp)
           if element[0] == "I":
             self.client.publish(FEED_INTENSITY, element[separate + 1 :])
             print(element[separate + 1 :])
           if element[0] == "L":
             self.client.publish(FEED_LED, element[separate + 1 :])
-            # print("T", element[1])
+          if element[0] == "R":
+            self.client.publish(FEED_ACK, element[separate + 1 :])

@@ -5,5 +5,6 @@ ADAFRUIT_IO_KEY = "aio_KfFT08tgFc2GXkiR05UOLslQnbGc"
 FEED_TEMP = "bbc-temp"
 FEED_INTENSITY = "bbc-intensity"
 FEED_LED = "bbc-led"
+FEED_ACK = "bbc-ack"
 
 # client = MQTTClient(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)

@@ -12,7 +12,8 @@ def main():
   feeds = [
     FEED_INTENSITY,
     FEED_LED,
-    FEED_TEMP
+    FEED_TEMP,
+    FEED_ACK
   ]
   
   RootAIO = AIOController(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY, feeds=feeds, serial=RootSerial)
